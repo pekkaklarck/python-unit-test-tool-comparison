@@ -3,7 +3,7 @@ Comparing Python unit testing tools
 
 This repository contains very simple examples that allow comparing
 Python standard unittest__ module with nose__ and `py.test`__ unit
-testing tools in practice. This is not intended to be a full scape
+testing tools in practice. This is not intended to be a full scope
 comparison of these tools, though.
 
 __ https://docs.python.org/2/library/unittest.html
@@ -105,7 +105,7 @@ The main benefit of ``nose`` compared to ``unittest`` is that it has
 better test discovery (i.e. functionality run all tests in a
 directory, recursively) and that it also supports test with less
 boilerplate. Having pretty much identical output as ``unittest`` makes
-``nose`` basically a ``ùnittest`` replacement with some extra
+``nose`` basically a ``unittest`` replacement with some extra
 features. As already noted above, one problem is that tests with just
 ``assert`` do not produce any other error message than
 ``AssertionError``.
@@ -113,7 +113,7 @@ features. As already noted above, one problem is that tests with just
 py.test
 -------
 
-Also ``py.test`` can run ``ùnittest`` based tests::
+Also ``py.test`` can run ``unittest`` based tests::
 
     $ py.test test_unittest.py
     ======================== test session starts =========================
@@ -135,7 +135,7 @@ Also ``py.test`` can run ``ùnittest`` based tests::
     ================= 1 failed, 3 passed in 0.01 seconds =================
 
 ``py.test`` supports also ``assert`` based tests and, very nicely,
-produces a meaningfull error message also with them::
+produces a meaningful error message also with them::
 
     $ py.test test_assert.py
     ======================== test session starts =========================
@@ -186,7 +186,7 @@ Finally, also ``py.test`` supports running the whole directory::
     ================= 2 failed, 6 passed in 0.03 seconds =================
 
 As already noted above, a very nice ``py.test`` feature is that it
-produces a meaningfull error message also with ``assert`` based
+produces a meaningfully error message also with ``assert`` based
 tests. Its output may look somewhat strange in the beginning, though,
 because it is completely different to the output of ``unittest`` or
 other similar ``xUnit`` tools.
