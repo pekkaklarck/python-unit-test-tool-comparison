@@ -1,6 +1,6 @@
 import unittest
 
-from sut import compare
+from sut import compare, divide
 
 
 class TestCompare(unittest.TestCase):
@@ -19,6 +19,9 @@ class TestCompare(unittest.TestCase):
 
     def test_failing(self):
         self.assertEquals(compare(1, 0), 0)
+
+    def test_raises(self):
+        self.assertRaises(ZeroDivisionError, divide, 1, 2)
 
 
 if __name__ == '__main__':

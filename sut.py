@@ -5,3 +5,7 @@ def compare(x, y):
         return 1
     else:
         return -1
+
+
+def divide(x, y):
+    return x / y
